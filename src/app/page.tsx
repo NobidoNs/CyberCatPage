@@ -1,35 +1,48 @@
 import Image from 'next/image'
-
+import personImg from 'C:/work/git/CyberCatPage/public/Person.jpg'
+// emerald
+// lime
+// green
+// teal
 export default function Home() {
 	return (
-		<main className='flex justify-between pt-48 w-full'>
-			<div className='grid grid-cols-2 px-32 h-56 shadow-lg shadow-cyan-500/50'>
-				<div className=''>
-					<Image
-						src='/Person.jpg'
-						alt='Vercel Logo'
-						width={400}
-						height={300}
-						priority
-					/>
-				</div>
-				<div className='font-mono text-lg pl-24 pt-6'>
-					<Image
-						src='/vercel.svg'
-						alt='Vercel Logo'
-						className='dark:invert'
-						width={500}
-						height={240}
-						priority
-					/>
-					<p className='py-12 mt-2 text-lg text-slate-700 dark:text-slate-400'>
-						Text
-					</p>
-					<div>
-						<a href='/' className='pr-12'>
-							ArtStation
-						</a>
-						<a href='/'>Link</a>
+		<main className='flex justify-between pt-32'>
+			<div className='px-32 h-96'>
+				<div className='h-full grid grid-cols-3 border-solid border-2 border-sky-500 shadow-lg shadow-sky-400 rounded-2xl'>
+					<div
+						className='relative p-3 border-solid border-2 border-teal-500 rounded-xl shadow-lg shadow-teal-400'
+						style={{ display: 'flex', flexDirection: 'column' }}
+						id='object-position-2'
+					>
+						<Image
+							src={personImg}
+							alt=''
+							// sizes='100vw'
+							className='object-cover'
+							// style={{
+							// 	width: '100%',
+							// 	height: 'auto',
+							// }}
+						/>
+					</div>
+					<div className='font-mono text-xl pt-6 p-8 col-span-2'>
+						<Image
+							src='/vercel.svg'
+							alt='Vercel Logo'
+							className='dark:invert'
+							width={500}
+							height={240}
+							priority
+						/>
+						<p className='py-2 mt-2 text-2xl text-slate-700 dark:text-slate-400'>
+							Text
+						</p>
+						<div>
+							<a href='/' className='pr-12'>
+								ArtStation
+							</a>
+							<a href='/'>Link</a>
+						</div>
 					</div>
 				</div>
 			</div>
