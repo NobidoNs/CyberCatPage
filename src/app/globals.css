@@ -31,16 +31,3 @@ body {
 		text-wrap: balance;
 	}
 }
-
-#object-position-1 {
-	object-position: 0px;
-	object-fit: 'fill';
-}
-
-#object-position-2 {
-	width: 100%;
-	height: auto;
-}
-.fill {
-	object-fit: fill;
-}

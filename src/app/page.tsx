@@ -12,18 +12,8 @@ export default function Home() {
 					<div
 						className='relative p-3 border-solid border-2 border-teal-500 rounded-xl shadow-lg shadow-teal-400'
 						style={{ display: 'flex', flexDirection: 'column' }}
-						id='object-position-2'
 					>
-						<Image
-							src={personImg}
-							alt=''
-							// sizes='100vw'
-							className='object-cover'
-							// style={{
-							// 	width: '100%',
-							// 	height: 'auto',
-							// }}
-						/>
+						<Image src={personImg} alt='' className='w-full h-full' />
 					</div>
 					<div className='font-mono text-xl pt-6 p-8 col-span-2'>
 						<Image
